@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f1ebdf"/>
+  <rect width="1200" height="10" fill="#782e38"/>
+  <line x1="76" y1="120" x2="1124" y2="120" stroke="#171918" stroke-width="2"/>
+  <line x1="76" y1="496" x2="1124" y2="496" stroke="#171918" stroke-width="2"/>
+  <text x="80" y="88" fill="#782e38" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="5">MEDICINE · SURGERY · BIOETHICS</text>
+  <text x="76" y="297" fill="#171918" font-family="Baskerville, Georgia, serif" font-size="88">Nicholas P. Randazzo</text>
+  <text x="80" y="373" fill="#4d4b46" font-family="Baskerville, Georgia, serif" font-size="35">A surgical life, informed by the humanities.</text>
+  <text x="80" y="551" fill="#4d4b46" font-family="Arial, sans-serif" font-size="19" letter-spacing="3">ALBERT EINSTEIN COLLEGE OF MEDICINE</text>
+  <text x="1120" y="551" text-anchor="end" fill="#782e38" font-family="Arial, sans-serif" font-size="19" font-weight="700">NPR</text>
+</svg>
