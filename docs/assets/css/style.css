@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&display=swap');
 
 :root {
   --paper: #f1ebdf;
@@ -12,6 +12,7 @@
   --rule-light: #c9c0b2;
   --serif: 'Newsreader', 'Iowan Old Style', 'Baskerville', 'Times New Roman', serif;
   --sans: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  --identity-serif: 'EB Garamond', Garamond, 'Iowan Old Style', 'Baskerville', 'Times New Roman', serif;
   --container: 1180px;
 }
 
@@ -63,10 +64,10 @@ h3 { font-size: clamp(1.35rem, 2.1vw, 1.85rem); line-height: 1.15; }
 
 .site-header { position: relative; z-index: 20; border-bottom: 1px solid var(--rule-light); background: var(--paper-light); }
 .college-header { position: relative; display: grid; place-items: center; min-height: 106px; }
-.site-identity { display: flex; flex-direction: column; align-items: center; color: var(--ink); font-family: var(--sans); line-height: 1; text-align: center; text-decoration: none; }
+.site-identity { display: flex; flex-direction: column; align-items: center; color: var(--ink); font-family: var(--identity-serif) !important; font-kerning: normal; line-height: 1; text-align: center; text-decoration: none; }
 .site-identity:hover { color: var(--ink); }
-.identity-name { font-size: 1.05rem; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; }
-.identity-subtitle { margin-top: .52rem; color: var(--ink-soft); font-size: .57rem; letter-spacing: .18em; text-transform: uppercase; }
+.identity-name { font-size: 1.22rem; font-weight: 600; letter-spacing: .095em; text-transform: uppercase; }
+.identity-subtitle { margin-top: .48rem; color: var(--ink-soft); font-size: .7rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; }
 .nav-toggle { position: absolute; top: 50%; right: 0; display: flex; align-items: center; gap: .75rem; min-height: 44px; padding: .5rem 0 .5rem .8rem; transform: translateY(-50%); appearance: none; border: 0; background: transparent; color: var(--ink); font-family: var(--sans); font-size: .66rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; }
 .menu-icon { position: relative; display: inline-block; width: 25px; height: 15px; border-top: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; }
 .menu-icon::after { content: ''; position: absolute; top: 50%; left: 0; width: 100%; border-top: 1.5px solid currentColor; transform: translateY(-50%); }
@@ -158,7 +159,7 @@ h3 { font-size: clamp(1.35rem, 2.1vw, 1.85rem); line-height: 1.15; }
 .small-index span { color: var(--ink-soft); font-size: .92rem; }
 
 .record-list { border-top: 1px solid var(--ink); }
-.record-row { display: grid; grid-template-columns: 130px minmax(0, 1fr) 150px; gap: clamp(1.4rem, 4vw, 3.4rem); padding: 1.6rem 0 1.75rem; border-bottom: 1px solid var(--rule); align-items: start; }
+.record-row { display: grid; grid-template-columns: 130px minmax(0, 1fr) 210px; gap: clamp(1.4rem, 4vw, 3.4rem); padding: 1.6rem 0 1.75rem; border-bottom: 1px solid var(--rule); align-items: start; }
 .record-row h3 { margin-bottom: .55rem; }
 .record-row p { margin-bottom: .5rem; color: var(--ink-soft); }
 .record-side { color: var(--ink-soft); font-size: .9rem; line-height: 1.4; text-align: right; }
@@ -211,6 +212,7 @@ h3 { font-size: clamp(1.35rem, 2.1vw, 1.85rem); line-height: 1.15; }
 .cv-entry ul { margin: .55rem 0 0; padding-left: 1.1rem; color: var(--ink-soft); }
 
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .75fr); gap: clamp(3rem, 8vw, 8rem); }
+.contact-grid .prose-large > p:nth-of-type(2) { margin-top: 1.65rem; }
 .contact-ledger { border-top: 1px solid var(--ink); }
 .contact-ledger a { display: flex; justify-content: space-between; gap: 2rem; padding: .85rem 0; border-bottom: 1px solid var(--rule-light); text-decoration: none; }
 .contact-ledger span:last-child { color: var(--ink-soft); font-size: .92rem; text-align: right; }
@@ -248,8 +250,8 @@ h3 { font-size: clamp(1.35rem, 2.1vw, 1.85rem); line-height: 1.15; }
   body { font-size: 17px; }
   .container { width: min(calc(100% - 28px), var(--container)); }
   .college-header { min-height: 88px; }
-  .identity-name { font-size: .84rem; letter-spacing: .1em; }
-  .identity-subtitle { margin-top: .42rem; font-size: .5rem; letter-spacing: .12em; }
+  .identity-name { font-size: 1rem; letter-spacing: .075em; }
+  .identity-subtitle { margin-top: .4rem; font-size: .62rem; letter-spacing: .09em; }
   .nav-toggle { right: 0; gap: .5rem; width: auto; min-height: 42px; padding-left: .5rem; }
   .menu-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .menu-icon { width: 23px; }
